@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle Project Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+    
+    </style>
+    <script src="js/cookie.js"></script>
+    <script src="js/theme.js"></script>
+
+</head>
+<body>
+    <nav id="top">
+        <div id="kee"><span>Developer Kee</span></div>
+        <div id="ptitle"><span>Oracle Project</span></div>
+        <span id="theme">
+            <span class="material-symbols-outlined">
+            </span>
+        </span>
+    </nav>
+
+    
+    <header>
+        <img src="images/o논리 ERD.png" alt="대표사진" id="oimg">
+    </header>
+    <hr>
+    <section>
+        <article id="about-project">
+            <h2 class="subtitle">About Project</h2>
+            <p>주제 : 관계형 데이터베이스 생성 및 관리 훈련을 위한 "교육센터 운영프로그램 DB" 제작</p>
+            <div id="env">
+                <span>개발 환경 :</span>
+                <table>
+                    <tr>
+                        <td>OS version(platform)</td>
+                        <td>Windows  Intel(R) i5-8250 CPU, 8GB, x64</td>
+                    </tr>
+                    <tr>
+                        <td>Oracle version(Language)</td>
+                        <td>Oracle 11g (ANSI-SQL , PL/SQL)</td>
+                    </tr>
+                    <tr>
+                        <td>Development tool</td>
+                        <td>SQL Developer</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p>개발 기간 : 2023.03.26 ~ 2023.04.06</p>
+            <p>목적 : 교육 센터 제반 기능의 통합적 관리, 네트워크 활성화, 계정별 기능 이용의 편의성 증진 </p>
+            <p>
+                데이터 테이블 :<ul>
+                    <li>tblHoliday
+                    <li>tblAdmin</li>
+                    <li>tblTeacher</li>
+                    <li>tblBasicRoom</li>
+                    <li>tblBook</li>
+                    <li>tblBasicSubject</li>
+                    <li>tblBasicClass</li>
+                    <li>tblOpenClass</li>
+                    <li>tblT_attend</li>
+                    <li>tblAbleSub</li>
+                    <li>tblOpenSubject</li>
+                    <li>tblStudent</li>
+                    <li>tblS_attend</li>
+                    <li>tblExam</li>
+                    <li>tblQuit</li>
+                    <li>tblGetJob</li>
+                    <li>tblTakeBook</li>
+                    <li>tblScore</li>
+                    <li>tblScoreRatio</li>
+                    <li>tblTeam</li>
+                    <li>tblStudentDate</li>
+                    <li>tblReview</li>
+                    <li>tblJaryosil</li>
+                    
+                </ul>
+            </p>
+            <p>구현 기능 : 
+                <ul>
+                    <li>관리자 : 기초 정보 관리, 교사 계정 관리, 개설 과정 관리, 개설 과목 관리, 교육생 관리, 성적 조회, 출결 관리, 팀 관리, 평점 조회, 취업 현황 조회, 교재 수령 여부 조회</li>
+                    <li>교사 : 강의스케줄 조회, 배점 입출력, 성적 입출력, 출결 조회, 시험 등록, 팀 조회, 근태 관리, 평점 조회, 자료실 관리</li>
+                    <li>교육생 : 성적 조회, 출결 관리, 강의 스케줄 조회, 팀 조회, 평점 등록, 자료실 조회</li>
+                </ul>
+            </p>
+
+        </article>
+        <hr>
+        <article id="history">
+            <h2 class="subtitle">History</h2>
+            <ul>
+                <li>요구사항 분석</li>
+                <img src="images/o요구분석.jpg" alt="요구분석 사진">
+                <li>순서도</li>
+                <img src="images/o5조 순서도.jpg" alt="순서도 사진">
+                <li>개념 데이터 모델링</li>
+                <img src="images/o개념 ERD.png" alt="개념erd 사진">
+                <li>논리 데이터 모델링</li>
+                <img src="images/o논리 ERD.png" alt="논리erd 사진">
+                <li>물리 데이터 모델링</li>
+                <img src="images/o물리 ERD.png" alt="물리erd 사진">
+                <li>DDL</li>
+                <img src="images/oDDL.jpg" alt="DDL 사진">
+                <li>DML(data Insert)</li>
+                <img src="images/oDML.jpg" alt="DML 사진">
+                <li>업무 쿼리(ANSI-SQL)</li>
+                <img src="images/o업무쿼리.jpg" alt="업무쿼리 사진">
+                <li>오브젝트(PL/SQL)</li>
+                <img src="images/o오브젝트.jpg" alt="오브젝트 사진">
+            </ul>
+        </article>
+        <hr>
+        <article id="content">
+            <h2 class="subtitle">Content</h2>
+            <img src="images/jcontent.jpg" alt="구현기능 사진" class="contentimage">
+        </article>
+        <hr>
+        <article id="review">
+            <h2 class="subtitle">Review</h2>
+            <div class="review-box">
+                <p>제한된 시간 안에 기능을 구현하는 것이 최우선 목표였고, 발견되는 오류들을 철저히 디버깅하며 제작했다.</p>
+                <p>그러다 보니 용어/멘트의 통일, 서비스 UI의 일관성, 재입력 메시지의 낮은 베타성, 잦은 수정으로 인한 타 부분에 대한 영향력 망각 등 미흡했던 점이 있었음을 반성한다.</p>
+                <p>하지만 팀원들과의 좋은 분위기 안에서 진행 과정은 상당히 순조로웠다.</p>
+
+                <p>첫 프로젝트라서 걱정했으나 업무 경험이 있던 팀원의 리드에 따라 순조롭게 진행 되었다.</p>
+                <p>코딩(구현)이 차지하는 부분은 생각보다 양적으로 그리 많지 않았다. 오히려 코딩 외의 과정들 또한 중요하다는 것을 배웠다.</p>
+                <p>표면적으로만 이해하고 있던 자바의 기능들을 직접 사용하면서 구체적으로 이해할 수 있게 되었고, 모르는 부분들을 직접 공부해가며 구현하는 과정에서 프로젝트 전보다 이해도가 높아졌다. 다양한 if문과 File입출력 및 객체 생성, Collection의 사용법을 익히는 데에 많은 도움이 되었다.</p> 
+                <p>콘솔 환경의 불편한 상황이 많이 답답했다. 웹을 빨리 배우고 싶다.</p>
+            </div>
+        </article>
+    </section>
+    <hr>
+    <footer>
+        <!-- &copy;Copyright Kee 2023 All reserved. -->
+    </footer>
+
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

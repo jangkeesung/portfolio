@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Project Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+    
+    </style>
+    <script src="js/cookie.js"></script>
+    <script src="js/theme.js"></script>
+
+</head>
+<body>
+    <nav id="top">
+        <div id="kee"><span>Developer Kee</span></div>
+        <div id="ptitle"><span>Java Console Project</span></div>
+        <span id="theme">
+            <span class="material-symbols-outlined">
+            </span>
+        </span>
+    </nav>
+
+    
+    <header>
+        <img src="images/j메인화면.PNG" alt="대표사진" id="jimg">
+    </header>
+    <hr>
+    <section>
+        <article id="about-project">
+            <h2 class="subtitle">About Project</h2>
+            <p>주제 : 파일 입출력 기반의 데이터 처리 자바 콘솔 프로젝트 (도서 목록 및 대출 · 반납 관리 자동화 구현)</p>
+            <div id="env">
+                <span>개발 환경 :</span>
+                <table>
+                    <tr>
+                        <td>OS version(platform)</td>
+                        <td>Windows  Intel(R) i5-8250 CPU, 8GB, x64</td>
+                    </tr>
+                    <tr>
+                        <td>JAVA version(Language)</td>
+                        <td>JDK 11.0.2</td>
+                    </tr>
+                    <tr>
+                        <td>Eclipse version(Development tool)</td>
+                        <td>Version: 2021-03 (4.19.0)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p>개발 기간 : 2023-03-06 ~ 2023-03-11</p>
+            <p>목적 : 콘솔 환경에서 도서 관리에 적합한 UI를 제공하고 데이터를 저장 및 관리하는 기능 구현하고자 함</p>
+            <p>개요 : <ul>
+                <li>사용자는 회원, 비회원, 관리자로 구분한다.</li>
+                <li>회원, 비회원은 모두 대출과 반납 서비스를 이용할 수 있고, 회원에게는 희망도서를 작성하는 기능과 이벤트 참여 등의 부가적인 기능을 제공한다.</li>
+                <li>관리자는 저장한 데이터를 사용하여 도서 관리 시스템을 운영하고 회원과 도서 관련 정보를 갱신할 수 있다.</li>
+                </ul></p>
+            <p>
+                사용한 라이브러리 :<ul>
+                    <li>파일 입출력 : BufferedReader, BufferedWriter, FileReader, FileWriter</li>
+                    <li>컬렉션 : ArrayList, HashSet 등</li>
+                    <li>정규식 : 유효성검사</li>
+                    <li>기타 클래스 : Calendar, Math, Scanner, Random, LocalDateTime, Thread</li>
+                </ul>
+            </p>
+            <p>
+                사용 데이터 파일 :<ul>
+                    <li>bannab.txt : 반납된 도서 목록을 관리하는 데이터 파일</li>
+                    <li>Book.txt : 도서관에 등록된 책 목록 데이터 파일</li>
+                    <li>correctList.txt : 퀴즈를 맞힌 회원들을 관리하는 데이터 파일</li>
+                    <li>member.txt : 도서관에 회원가입을 한 회원들 데이터 파일</li>
+                    <li>quizList.txt : 관리자가 등록한 퀴즈 및 답을 관리하는 데이터 파일</li>
+                    <li>rentLog.txt : 회원, 비회원이 대출한 책들을 관리하는 데이터 파일</li>
+                    <li>winnerList.txt : 퀴즈를 맞힌 회원 중 추첨을 통하여 선별된 회원들 데이터 파일</li>
+                    <li>wishList.txt : 회원들이 작성한 희망도서 목록을 관리하는 데이터 파일</li>
+                </ul>
+            </p>
+            <p>
+                구현 기능 :<ul>
+                    <li>비회원 : 도서 검색, 도서 대출, 도서 반납, 회원가입, 이벤트 조회</li>
+                    <li>회원 : 로그인, 도서 검색, 도서 대출, 도서 반납, 회원 정보 수정, 희망 도서 작성, 퀴즈 맞히기</li>
+                    <li>관리자 : 로그인, 도서 검색, 도서 등록, 도서 수정, 도서 삭제, 반납함 관리, 희망도서 관리, 연체 도서 관리, 회원 정보 열람 및 삭제, 퀴즈 등록, 당첨자 추천 및 조회</li>
+                </ul>
+            </p>
+        </article>
+        <hr>
+        <article id="history">
+            <h2 class="subtitle">History</h2>
+            <ul>
+                <li>요구사항 분석</li>
+                <img src="images/j요구분석.jpg" alt="요구분석 사진">
+                <li>화면 설계 : ppt </li>
+                <img src="images/j화면설계.jpg" alt="화면설계 사진">
+                <li>VO/DAO/Service/Controller/UI 패키지 구분 </li>
+                <img src="images/j패키지.jpg" alt="패키지 사진">
+                <li>더미데이터 생성 : txt파일, 구분자 약속, column 선정 </li>
+                <img src="images/j더미.jpg" alt="더미 사진">
+                <li>역할 분담 </li>
+                <img src="images/j역할분담.jpg" alt="역할분담 사진">
+                <li>기능 구현 </li>
+                <img src="images/j기능구현.jpg" alt="기능구현 사진">
+                <li>구현 코드 취합 </li>
+                <img src="images/j취합.jpg" alt="취합 사진">
+                <li>테스팅 + 디버깅</li>
+                <img src="images/j테스팅.jpg" alt="테스팅 사진">
+            </ul>
+        </article>
+        <hr>
+        <article id="content">
+            <h2 class="subtitle">Content</h2>
+            <img src="images/jcontent.jpg" alt="구현기능 사진" class="contentimage">
+        </article>
+        <hr>
+        <article id="review">
+            <h2 class="subtitle">Review</h2>
+            <div class="review-box">
+                <p>제한된 시간 안에 기능을 구현하는 것이 최우선 목표였고, 발견되는 오류들을 철저히 디버깅하며 제작했다.</p>
+                <p>그러다 보니 용어/멘트의 통일, 서비스 UI의 일관성, 재입력 메시지의 낮은 베타성, 잦은 수정으로 인한 타 부분에 대한 영향력 망각 등 미흡했던 점이 있었음을 반성한다.</p>
+                <p>하지만 팀원들과의 좋은 분위기 안에서 진행 과정은 상당히 순조로웠다.</p>
+
+                <p>첫 프로젝트라서 걱정했으나 업무 경험이 있던 팀원의 리드에 따라 순조롭게 진행 되었다.</p>
+                <p>코딩(구현)이 차지하는 부분은 생각보다 양적으로 그리 많지 않았다. 오히려 코딩 외의 과정들 또한 중요하다는 것을 배웠다.</p>
+                <p>표면적으로만 이해하고 있던 자바의 기능들을 직접 사용하면서 구체적으로 이해할 수 있게 되었고, 모르는 부분들을 직접 공부해가며 구현하는 과정에서 프로젝트 전보다 이해도가 높아졌다. 다양한 if문과 File입출력 및 객체 생성, Collection의 사용법을 익히는 데에 많은 도움이 되었다.</p> 
+                <p>콘솔 환경의 불편한 상황이 많이 답답했다. 웹을 빨리 배우고 싶다.</p>
+            </div>
+        </article>
+        <div id="back"><a href="index.html">Go Back</a></div>
+    </section>
+    <hr>
+    <footer>
+        <!-- &copy;Copyright Kee 2023 All reserved. -->
+    </footer>
+
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

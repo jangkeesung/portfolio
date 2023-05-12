@@ -1,0 +1,345 @@
+:root {
+    --light-color: #DDD;
+    --dark-color: #111;
+}
+
+html {
+    margin: 0 10px;
+}
+body {
+    /* border: 1px solid white; */
+    width: 960px;
+    background-color: var(--dark-color);
+    margin: 0px auto;
+    color: var(--light-color);
+    margin-bottom: 150px;
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
+hr {
+    border: 1px solid var(--light-color);
+    margin: 25px 0;
+    opacity: .1;
+    box-shadow: 0px 0px 10px 3px var(--light-color);
+}
+
+#top {
+    /* border: 1px solid red; */
+    width: 960px;
+    height: 60px;
+    color: var(--light-color);
+    padding-top: 0;
+    position: sticky;
+    top:0px;
+    background-color: var(--dark-color);
+    box-shadow: 0px 10px 5px 5px var(--dark-color);
+    display: grid;
+    grid-template-columns: 300px 600px 60px;
+    z-index: 1;
+}
+
+#top #kee {
+    font-weight: bold;
+    display: inline;
+    margin: auto 0px;
+    font-size: 2rem;
+    font-variant: small-caps;
+    user-select: none;
+}
+#top #kee span:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 5px #CCC;
+}
+
+
+#top #menu {
+    float: left;
+    padding: 0;
+}
+
+
+#top li {
+    position: relative;
+    top: 9px;
+    display: inline-block;
+    font-size: 1rem;
+    margin: auto 30px;
+    cursor: pointer;
+    user-select: none;
+}
+#top li:hover  {
+    border-bottom: 1px solid var(--light-color);
+    text-shadow: 0px 0px 5px #CCC;
+    /* text-decoration: underline; */
+}
+
+#theme {
+    position: relative;
+    right: -17px;
+    top: 24px;
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    /* background-color: var(--light-color); */
+    color: var(--light-color);
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 5px 1px var(--light-color); */
+    text-shadow: 0px 0px 1px var(--light-color);
+}
+#theme:hover {
+    /* text-decoration: underline; */
+    box-shadow: 0px 0px 5px 2px var(--light-color);
+    text-shadow: 0px 0px 2px var(--light-color);
+}
+
+header {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-shadow: 0px 0px 3px red;
+}
+
+header div {
+    text-align: center;
+}
+
+#intro {
+    /* text-decoration:underline; */
+    color: #51DA4C;
+    font-style: italic;
+    text-shadow: 0px 0px 10px #51DA4C;
+}
+
+.introbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.introimage {
+    margin: 0 auto;
+    width: 400px;
+    user-select: none;
+}
+
+/* #Intro #initial {
+    font-size: 3rem;
+    font-style: italic;
+} */
+
+.skillbox {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 510px 450px;
+    /* padding-top: 50px; */
+    /* vertical-align: center; */
+    font-size: 1.1rem;
+    line-height: 30px;
+    /* height: 300px; */
+}
+
+.skillbox ul {
+    list-style: circle;
+}
+
+
+.logo {
+    position: relative;
+    /* left: 20px; */
+    top: -10px;
+    width: 450px;
+    /* border: 1px solid red; */
+    user-select: none;
+}
+
+#Education {
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+#Education ul {
+    list-style: circle;
+}
+
+#Education a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+#Education a:hover {
+    text-decoration: underline;
+}
+
+.edubox {
+    display: grid;
+    grid-template-columns: 700px 260px;
+    grid-template-rows: 100px;
+    /* border: 1px solid red; */
+}
+
+#univlogo {
+    position: relative;
+    left: -130px;
+    top: -150px;
+    width: 500px;
+    user-select: none;
+    /* border: 1px solid red; */
+}
+
+
+
+#plist h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px solid var(--light-color);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pitem ul {
+    list-style-type: circle;
+}
+
+.ui-state-hover {
+    background-color: #808080;
+}
+
+.ui-state-active {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    cursor: default;
+}
+
+.mainimg {
+    width: 600px;
+    margin: 10px 180px;
+}
+
+.mainimg#twlibrary{ box-shadow: 0px 0px 10px 2px #2f2f2f; }
+.mainimg#sist { 
+    box-shadow: 0px 0px 10px 2px #FAFAFB;
+    margin: 50px 180px;
+ }
+
+
+.detail, #back{
+    text-align: center;
+    user-select: none;
+}
+.detail a, #back a{
+    display: inline-block;
+    padding: 0px 15px;
+    border-radius: 5px;
+    background-color: var(--light-color);
+    text-decoration: none;
+    font-variant: none;
+    color: var(--dark-color);
+    font-size: 1rem;
+    box-shadow: 0px 0px 10px 1px #808080;
+}
+.detail a:hover, #back a:hover {
+    text-decoration: underline;
+}
+
+#top #ptitle {
+    /* border: 1px solid red;   */
+    width: 360px;
+    display: inline-block;
+    padding-top: 10px;
+    position: relative;
+    font-size: 1.5rem;
+    margin: 0;
+    top: 8px;
+    font-variant: small-caps;
+    font-weight: bold;
+    user-select: none;
+    text-align: center;
+}
+
+#top #ptitle span:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 5px #CCC;
+}
+
+header > img {
+    /* border: 1px solid red;  */
+    width: 800px;
+    margin: 0 80px;
+}
+
+header > #jimg {
+    box-shadow: 0px 0px 10px 2px #2f2f2f;
+}
+header > #oimg {
+    box-shadow: 0px 0px 10px 2px #FFFFFF;
+}
+
+.subtitle {
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+#about-project span {
+    float:left;
+}
+
+#about-project table {
+    border-collapse: collapse;
+    float:left;
+    margin: 10px 40px;
+}
+
+#about-project ul {
+    list-style-type: circle;
+}
+
+#about-project #env::after {
+    display: block;
+    content:'';
+    clear: both;
+}
+
+#about-project #lib::after {
+    display: block;
+    content:'';
+    clear: both;
+}
+
+#about-project td {
+    border: 1px solid var(--light-color);
+    padding: 5px 10px;   
+}
+
+#history ul {
+    list-style-type: decimal;
+}
+
+#history img {
+    width: 200px;
+    margin: 10px 40px;
+    opacity: .6;
+    transition: all .2s;
+}
+
+#history img:hover {
+    position: relative;
+    width: 900px;
+    margin: 20px 0px;
+    opacity: 1;
+}
+
+.contentimage {
+    width: 900px;
+    margin: 0 30px;
+}
+
+.review-box {
+    font-style: italic;
+    padding: 15px;
+    font-size: 1.1rem;
+    /* text-align: justify; */
+    /* font-weight: bold; */
+}
