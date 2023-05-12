@@ -41,9 +41,9 @@ $('#ptitle span').click(function() {
 
 //테마 아이콘 적용
 if (getCookie('theme') == '' || getCookie('theme') == 'dark') {
-    $('.material-symbols-outlined').text("light_mode")
+    $('.material-symbols-outlined').text("light_mode");
 } else if (getCookie('theme') == 'light') {
-    $('.material-symbols-outlined').text("dark_mode")
+    $('.material-symbols-outlined').text("dark_mode");
 }
 
 
@@ -53,12 +53,12 @@ $('#theme').click(function() {
         setCookie('theme', 'light', 365);
         document.documentElement.style.setProperty("--light-color", "#333");
         document.documentElement.style.setProperty("--dark-color", "#EEE");
-        $('.material-symbols-outlined').text("dark_mode")
+        $('.material-symbols-outlined').text("dark_mode");
     } else if (getCookie('theme') == 'light') {
         setCookie('theme', 'dark', 365);
         document.documentElement.style.setProperty("--light-color", "#DDD");
         document.documentElement.style.setProperty("--dark-color", "#111");
-        $('.material-symbols-outlined').text("light_mode")
+        $('.material-symbols-outlined').text("light_mode");
     }
 });
 
